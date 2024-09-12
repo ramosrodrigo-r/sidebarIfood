@@ -94,6 +94,7 @@ a.sidebar-link {
     font-size: 0.9rem;
     white-space: nowrap;
     border-left: 3px solid transparent;
+    transition: all 0.2s ease-in-out;
 }
 
 .sidebar-link i {
@@ -108,4 +109,13 @@ a.sidebar-link:hover {
 
 .sidebar-item {
     position: relative;
+}
+
+#sidebar:hover {
+    width: 300px; /* Define a largura da sidebar ao passar o mouse */
+}
+
+#sidebar:hover .sidebar-logo,
+#sidebar:hover a.sidebar-link span {
+    display: block;
 }
